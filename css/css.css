@@ -1,0 +1,40 @@
+body{
+    /* to change the font, use font-family */
+    font-family:Arial, Helvetica, sans-serif;
+    /* to change font size, use font-sze */
+    font-size: 18pt;
+}
+/* header and footer tags with curly braces affect the header and footer in the html doc */
+header{
+    background-color: aquamarine;
+}
+footer{
+    background-color:aquamarine;
+}
+/* by targeting the class of the header in the main documents I am able to change its text colour */
+.site-title {color: red;}
+/* this # allows the css doc to target an id on the html doc */
+/* box-shadow creates a shadow beneath a targeted object */
+#my-image {
+    box-shadow: 0 0 1px 2px black;
+}
+/* the nav-list class is targeted and list-style-type: none removes the styling from the list. In this case, the bullet points. */
+.nav-list {list-style-type: none;}
+a{
+    /* to remove the link underline... */
+    text-decoration:none;  
+}
+/* the a targets the links on the html doc */
+a{
+    background-color: blueviolet;
+}
+/* hover affects how something looks when you hover over it with your cursor */
+a:hover {
+background-color: yellow;
+}
+/* active affects how something looks when you are clicking on it */
+a:active {
+    background-color:bisque;
+}
+
+.square-bullet {list-style-type: square}

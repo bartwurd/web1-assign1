@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Assignment 1</title> <!-- the title tag is where you add the page's title so that it shows up on top of the browser tab.-->
+    <link href="css/css.css" rel="stylesheet"> <!-- href= links each page to the css document-->
 </head>
 <body> <!-- the body is where all the content on your page goes-->
     <header> <!-- the header is the top section of the page and h1 to h6 define the size and importance of the heading text-->
-        <h1>Brennan Bova</h1> <!-- That's my name!-->
+        <!-- adding a class to an element allows the css doc to target it-->
+        <h1 class="site-title">Brennan Bova</h1> <!-- That's my name!-->
               <nav>
-            <ul>
+            <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="notes.html">Notes</a></li>     
             </ul>
@@ -17,7 +19,8 @@
         </header>
         <main> 
             <!-- the img tag makes images appear on your page. This tag requires a src, denoting where the image is located and an alt, describing what the image is-->
-            <img src="images/selfie.jpg" alt="a vector self portrait">
+            <!-- the id tag lets this image be targeted by the css doc-->
+            <img id="my-image" src="images/selfie.jpg" alt="a vector self portrait">
             <!-- this area contains the main content of the page, hence the name-->
             <article> <!-- an article needs a heading, and usually contains multiple paragraphs about the same subject -->
                 <h2>About Me</h2>
@@ -30,12 +33,12 @@
                 <h3>Hobbies</h3>
                 <!-- list tags are used to create a list of items. There are three types of lists: 
                  ordered lists (ol), unordered lists (ul) and description lists (dl). -->
-            </article>
-            <ul>
+                 <ul class="square-bullet">
                 <!-- unordered lists use the li (list item) tag to add children -->
                 <li>Drawing</li>
                 <li>Listening to music</li>
             </ul>
+            </article>
 
             <section>
                 <h3>Inspirational Quote</h3>
